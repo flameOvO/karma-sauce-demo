@@ -1,0 +1,21 @@
+name: Karma Sauce Demo
+on:
+  push:
+    branches: ['master']
+jobs:
+  karma_sauce_test:
+    name: My first job
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x, 14.x, 15.x]
+    runs-on: macOS-latest
+
+    steps:
+        - uses: actions/checkout@v2 #Checkout Repo
+        - uses: actions/setup-node@v1 #Setup Node
+          with:
+            node-version: '16.x'
+        - name: Run Karma Tests
+          run: |
+            npm ci
+            npm run test 

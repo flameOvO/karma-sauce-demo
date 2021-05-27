@@ -1,0 +1,31 @@
+{
+  "name": "karma-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": " export SAUCE_USERNAME=xingming SAUCE_ACCESS_KEY=10f48954-6590-4e1c-9234-1d38d835a501 && karma start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
+    "karma": "^6.3.2",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-mocha": "^2.0.1",
+    "karma-requirejs": "^1.1.0",
+    "karma-sauce-launcher": "^4.3.6"
+  },
+  "dependencies": {
+    "@testing-library/react-hooks": "^7.0.0",
+    "ahooks": "^2.10.4",
+    "chai": "^4.3.4",
+    "karma-chai": "^0.1.0",
+    "karma-webpack": "^5.0.0",
+    "mocha": "^8.4.0",
+    "react-dom": "^16.14.0",
+    "request": "^2.88.2"
+  }
+}
